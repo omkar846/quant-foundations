@@ -10,6 +10,6 @@ SELECT
     date,
     close,
     previous_close,
-    (close / previous_close) - 1 AS daily_return
+    (close / previous_close) - 1 AS ret
 FROM price_history
 ORDER BY date;
